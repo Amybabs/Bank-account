@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bank App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ username }}</h2>
+        {% if username != "admin" %}
+            <p>Your balance: ${{ balance }}</p>
+            <a href="/deposit">Deposit</a> | <a href="/withdraw">Withdraw</a> | <a href="/statements">View Statements</a>
+        {% else %}
+            <p>Admin Panel</p>
+            <a href="/view-all-balances">View All Balances</a> | <a href="/view-statements">View All Statements</a>
+        {% endif %}
+        <br>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>

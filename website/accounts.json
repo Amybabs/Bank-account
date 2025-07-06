@@ -1,0 +1,7 @@
+{
+    "admin": {
+        "password": "scrypt:32768:8:1$jHoDDDeJIhIUJtAx$ed2c869d2bb0448402f4917978c433665a4c1611507060f2a533d684b5c9f2f0b8855525cdc564506c4f49b9ce9fca155272c9de10a7b9e918d61c46af4eb2e6",
+        "balance": 0,
+        "transactions": []
+    }
+}
